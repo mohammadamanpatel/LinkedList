@@ -65,6 +65,9 @@ public:
         ListNode*leftListhead = head;
         ListNode*rightListhead = mid->next;
         mid->next = NULL; //agar slow->next NULL nhi kiya to link break nhi hoga aur do lists
+        
+         // galti se pehle call mat kardena pehle mid ke next se link todna
+         
         ListNode*leftList = sortList(leftListhead);
         ListNode*rightList = sortList(rightListhead);
                            //nhi ban payegi
